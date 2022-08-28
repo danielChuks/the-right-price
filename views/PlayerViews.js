@@ -45,14 +45,6 @@ exports.Done = class extends React.Component {
   }
 };
 
-exports.Draw = class extends React.Component {
-  render() {
-    const { Draw } = this.props;
-    return(
-      <div>{ outcome  === Draw ? "There was a draw play again" : null}</div>
-    )
-  }
-}
 
 exports.Timeout = class extends React.Component {
   render() {
