@@ -73,7 +73,7 @@ class Deal extends React.Component {
     return priceGuess;
   }
   seeResult(i) {
-    this.setState({ view: "Done", result: RESULT[i] });
+    this.setState({ view: "Done", outcome: RESULT[i] });
   } //we provide the seeOutcome and informTimeout callbacks, which set the component state to display Done display and Timeout display, respectively.3
   informTimeout() {
     this.setState({ view: "Timeout" });

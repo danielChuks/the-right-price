@@ -1,4 +1,5 @@
 import React from "react";
+import { render } from "react-dom";
 //add draw
 const exports = {};
 
@@ -38,11 +39,20 @@ exports.Done = class extends React.Component {
     const { outcome } = this.props;
     return (
       <div>
-         {outcome || "Unknown"}
+         {`The result is ${outcome} `|| "Unknown"}
       </div>
     );
   }
 };
+
+exports.Draw = class extends React.Component {
+  render() {
+    const { Draw } = this.props;
+    return(
+      <div>{ outcome  === Draw ? "There was a draw play again" : null}</div>
+    )
+  }
+}
 
 exports.Timeout = class extends React.Component {
   render() {
