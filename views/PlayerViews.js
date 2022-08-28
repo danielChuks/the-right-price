@@ -39,7 +39,7 @@ exports.Done = class extends React.Component {
     const { outcome } = this.props;
     return (
       <div>
-         {`The result is ${outcome} `|| "Unknown"}
+         {`The result is` outcome || "Unknown"}
       </div>
     );
   }
